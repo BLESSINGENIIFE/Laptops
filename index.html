@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyPay Laptops - Installments for Students & Professionals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">💻 EasyPay Laptops</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#calculator">Installment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Own Your Dream Laptop Now, Pay Later!</h1>
+      <p>Flexible installment plans for Students and Business Professionals.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Popular Laptops</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="image.png" alt="Laptop 1">
+        <h3>HP Pavilion 14</h3>
+        <p>₦450,000</p>
+        <button class="btn">Buy on Installment</button>
+      </div>
+      <div class="product-card">
+        <img src="image copy.png" alt="Laptop 2">
+        <h3>Dell Inspiron 15</h3>
+        <p>₦520,000</p>
+        <button class="btn">Buy on Installment</button>
+      </div>
+      <div class="product-card">
+        <img src="image copy 2.png" alt="Laptop 3">
+        <h3>MacBook Air M1</h3>
+        <p>₦850,000</p>
+        <button class="btn">Buy on Installment</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="calculator">
+    <h2>Installment Calculator</h2>
+    <div class="calc-box">
+      <input type="number" id="price" placeholder="Laptop Price (₦)">
+      <input type="number" id="months" placeholder="Months to Pay (e.g. 6)">
+      <button onclick="calculateInstallment()">Calculate</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EasyPay Laptops. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

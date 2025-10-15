@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #0a3d62;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+header .logo {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd32a;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1050&q=80') center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  margin: 15px 0;
+}
+
+.btn {
+  background: #ffd32a;
+  color: #0a3d62;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #fbc531;
+}
+
+/* Products */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Calculator */
+.calculator {
+  background: #dff9fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.calc-box input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.calc-box button {
+  background: #0a3d62;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calc-box p {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #0a3d62;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
