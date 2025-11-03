@@ -16,8 +16,9 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   padding: 15px 60px;
+  
 }
 
 header .logo {
@@ -60,7 +61,9 @@ nav a:hover {
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  
 }
+  
 
 .btn:hover {
   background: #fbc531;
@@ -69,11 +72,11 @@ nav a:hover {
 /* Products */
 .products {
   padding: 60px 20px;
-  text-align: center;
+  text-align:center;
 }
 
 .product-grid {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   margin-top: 30px;
@@ -84,13 +87,25 @@ nav a:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px; /* adjust height if needed */
+  text-align: center;
 }
+
+  
+
 
 .product-card img {
   width: 100%;
+  height: 160px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
 
 /* Calculator */
 .calculator {
@@ -157,4 +172,36 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+}
+
+/* Popup Styles */
+   #popup1, #popup2,#popup3  ,#popup4,#popup5,#popup6 ,#popup7 ,#popup8 ,#popup9 ,#popup10{
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+   } 
+   
+    #popup1:target, #popup2:target, #popup3:target, #popup4:target ,#popup5:target,#popup6:target ,#popup7:target ,#popup8:target,#popup9:target ,#popup10:target{
+  display:flex
+}
+    #popup1 img, #popup2 img,#popup3 img,#popup4 img ,#popup5 img, #popup6 img , #popup7 img , #popup8 img ,#popup9 img ,#popup10 img{
+  max-width: 30%;
+  max-height: 50%;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .mybutton {
+  margin-top: auto;
 }
