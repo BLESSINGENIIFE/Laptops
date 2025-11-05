@@ -35,6 +35,8 @@ nav a {
 
 nav a:hover {
   color: #ffd32a;
+  background-color: skyblue;
+  padding: 14px 16px;
 }
 
 /* Hero */
@@ -89,7 +91,7 @@ nav a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   
   display: flex;
-  flex-direction: column;
+  flex-direction:column ;
   justify-content: space-between;
   height: 380px; /* adjust height if needed */
   text-align: center;
